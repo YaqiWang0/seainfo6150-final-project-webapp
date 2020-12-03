@@ -11,7 +11,7 @@ const LoginPage = (props) => {
         e.target.elements.usernameLogin.value = "";
         e.target.elements.passwordLogin.value = "";
         history.push(
-            "/home",
+            "/",
             {
                 username: username,
                 password: password,
@@ -27,7 +27,7 @@ const LoginPage = (props) => {
         e.target.elements.usernameSignup.value = "";
         e.target.elements.passwordSignup.value = "";
         history.push(
-            "/home",
+            "/",
             {
                 username: username,
                 password: password,

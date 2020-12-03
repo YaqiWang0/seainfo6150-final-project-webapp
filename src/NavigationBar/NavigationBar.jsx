@@ -20,9 +20,9 @@ const NavigationBar  = (props) => {
             username: "",
             password: ""
         })
-        if(location.pathname !== "/home") {
+        if(location.pathname !== "/") {
             history.push(
-                "/home",
+                "/",
                 {login: false}
             )
         }
