@@ -1,0 +1,77 @@
+.dotSelected {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0.3vw;
+    cursor: pointer;
+}
+
+.dotUnSelected {
+    height: 25px;
+    width: 25px;
+    background-color: rgba(187, 187, 187, 0.49);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0.3vw;
+    cursor: pointer;
+}
+
+.container {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.dots {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    grid-area: footer;
+    align-items: center;
+    justify-content: center;
+}
+
+.left_arrow {
+    grid-area: leftArrow;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.right_arrow {
+    grid-area: rightArrow;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    grid-area: title;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    text-align: left;
+    font-size: 2vw;
+    padding-right: 3vw;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.59);
+    background-size: cover;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
+    grid-template-rows: 4fr 1fr;
+    grid-template-areas:
+            "leftArrow title . . rightArrow"
+            "leftArrow footer footer footer rightArrow";
+}

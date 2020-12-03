@@ -1,14 +1,17 @@
 {
   "name": "seainfo6150-webapp",
-  "homepage": "https://aprilbingham-neu.github.io/seainfo6150-final-project-webapp",
+  "homepage": "https://YaqiWang0.github.io/seainfo6150-final-project-webapp",
   "version": "0.1.0",
   "private": true,
   "proxy": "https://validator.w3.org/",
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "5.2.0",
-    "react-scripts": "3.0.0"
+    "lodash": "4.17.20",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.0",
+    "react-tradingview-widget": "^1.3.2",
+    "web-vitals": "^0.2.4"
   },
   "devDependencies": {
     "@testing-library/react": "10.4.5",

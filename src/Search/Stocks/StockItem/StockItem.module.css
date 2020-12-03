@@ -1,0 +1,120 @@
+.container1 {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5%;
+    padding: 1em 1em 1em 1em;
+    width: 100%;
+
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5%;
+    padding: 1em 1em 1em 30%;
+    width: 100%;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5%;
+    padding: 1em 1em 1em 50%;
+    width: 100%;
+}
+
+.container4 {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5%;
+    padding: 1em 1em 1em 70%;
+    width: 100%;
+}
+
+.container5 {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5%;
+    padding: 1em 1em 1em 80%;
+    width: 100%;
+}
+
+.container6 {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5%;
+    padding: 1em 1em 1em 20%;
+    width: 100%;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    opacity: 0.5;
+
+    transition: transform .5s ease;
+    animation: fadein 2s;
+
+    -webkit-animation: fadein 2s;
+    cursor: pointer;
+}
+
+.name:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.stock_name {
+    font-size: 3em;
+    color: white;
+    text-align: left;
+    width: 100%;
+    cursor: inherit;
+}
+
+.company_name {
+    color: gray;
+    font-family: Serif;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+    font-size: large;
+    cursor: inherit;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
