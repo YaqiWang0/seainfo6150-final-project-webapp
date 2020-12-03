@@ -69,7 +69,7 @@ function App() {
                 <Route path="/user">
                     <UserPage />
                 </Route>
-                <Route exact path="/" >
+                <Route path="/" >
                     <HomePage fetchedData = {fetchedData} gainer = {gainer} loser = {loser}/>
                 </Route>
                 <Route path="*" component={Error} />
