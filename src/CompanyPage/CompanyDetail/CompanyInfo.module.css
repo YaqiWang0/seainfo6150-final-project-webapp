@@ -184,3 +184,12 @@
     left: 0.5vw;
     top: 0;
 }
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+    cursor: pointer;
+}

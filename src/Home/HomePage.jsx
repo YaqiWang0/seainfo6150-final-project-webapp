@@ -17,14 +17,14 @@ const HomePage = (props) => {
         if(location.state.login == true) {
             setLoginCredential({
                 login: location.state.login,
-                username: location.state.username,
-                password: location.state.password
+                userId: location.state.userId,
+                email: location.state.email
             })
         } else {
             setLoginCredential({
                 login: location.state.login,
-                username: "",
-                password: ""
+                userId: "",
+                email: ""
             })
         }
         location.state = undefined

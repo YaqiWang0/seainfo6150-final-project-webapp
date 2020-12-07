@@ -5,6 +5,8 @@ import { useLocation } from "react-router-dom";
 import style from "./CompanyPage.module.css"
 import StockChart from "./CompanyDetail/StockChart";
 import NewsList from "../News/NewsList";
+import {FirebaseContext} from "../Firebase";
+import UserButton from "../NavigationBar/UserButton/UserButton";
 
 const CompanyPage = (props) => {
     let location = useLocation();
@@ -17,7 +19,12 @@ const CompanyPage = (props) => {
         <div className={style.background}>
             <div className={style.container}>
                 <NavigationBar login = {login}/>
-                <CompanyInfo info = {data} />
+                <FirebaseContext.Consumer>
+                    {firebase =>
+                        <CompanyInfo info = {data} firebase = {firebase} login = {login}/>
+                    }
+                </FirebaseContext.Consumer>
+
                 <StockChart symbol = {data[0].symbol}/>
                 <NewsList data = {Object.values(news)}/>
             </div>

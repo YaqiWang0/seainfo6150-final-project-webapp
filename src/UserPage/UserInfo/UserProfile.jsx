@@ -7,7 +7,8 @@ const UserProfile = (props) => {
             <div className={style.picBack}>
             <div className={style.pic}/>
             </div>
-            <div className={style.username}>{props.username}</div>
+            <div className={style.username}>{props.email}</div>
+            <div className={style.username}>{props.userId}</div>
         </div>
     )
 }

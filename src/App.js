@@ -2,6 +2,7 @@ import style from './App.css';
 import React, { useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import { isEmpty } from "lodash";
+import { FirebaseContext } from './Firebase';
 
 import HomePage from "./Home/HomePage";
 import SearchPage from "./Search/SearchPage";
@@ -30,16 +31,7 @@ function App() {
             const responseJson = await response.json();
             setLoser(responseJson);
         }
-        if (isEmpty(gainer)) {
-            gain()
-        }
-        if (isEmpty(loser)) {
-            lose()
-        }
-    }, [gainer, loser]);
 
-
-    useEffect(() => {
         const fetchData = async () => {
             // performs a GET request
             const response = await fetch("https://financialmodelingprep.com/api/v3/stock_news?limit=10&apikey=56f622a93b55019c5a0875058fc58f13");
@@ -50,21 +42,31 @@ function App() {
         if (isEmpty(fetchedData)) {
             fetchData();
         }
-    }, [fetchedData]);
 
+        if (isEmpty(gainer)) {
+            gain()
+        }
+        if (isEmpty(loser)) {
+            lose()
+        }
 
-    return isEmpty(fetchedData) ? null : (
+    }, [gainer, loser, fetchedData]);
+
+    return (isEmpty(fetchedData) || isEmpty(gainer) || isEmpty(loser)) ? null : (
         <div className={style.App}>
             <Switch>
                 <Route path="/search">
                     <SearchPage />
-
                 </Route>
                 <Route path="/company">
                     <CompanyPage />
                 </Route>
                 <Route path="/login_sign_up">
-                    <LoginPage />
+                    <FirebaseContext.Consumer>
+                        {firebase =>
+                            <LoginPage firebase = {firebase}/>
+                        }
+                    </FirebaseContext.Consumer>
                 </Route>
                 <Route path="/user">
                     <UserPage />
@@ -72,7 +74,8 @@ function App() {
                 <Route path="/" >
                     <HomePage fetchedData = {fetchedData} gainer = {gainer} loser = {loser}/>
                 </Route>
-                <Route path="*" component={Error} />
+                <Route path="/error" component={Error} />
+                <Route component={Error} />
             </Switch>
         </div>
     );

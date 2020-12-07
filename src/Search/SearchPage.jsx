@@ -11,8 +11,8 @@ const SearchPage = (props) => {
     const [fetchedData, setFetchedData] = useState({});
     const [login, setLogin] = useState({
                                                    login: location.state.login,
-                                                   username: location.state.credential.username,
-                                                   password: location.state.credential.password
+                                                    email: location.state.credential.email,
+                                                    userId: location.state.credential.userId
                                                   });
 
     useEffect(() => {
@@ -23,8 +23,8 @@ const SearchPage = (props) => {
             setFetchedData(responseJson);
             setLogin({
                 login: location.state.login,
-                username: location.state.credential.username,
-                password: location.state.credential.password
+                email: location.state.credential.email,
+                userId: location.state.credential.userId
             });
         };
             fetchData();

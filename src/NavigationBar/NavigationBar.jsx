@@ -3,6 +3,8 @@ import SearchBar from "./SearchBar/SearchBar";
 import UserButton from "./UserButton/UserButton";
 import style from "./NavigationBar.module.css"
 import { useHistory, useLocation } from "react-router-dom";
+import LoginPage from "../LoginAndSignUp/LoginPage";
+import {FirebaseContext} from "../Firebase";
 
 const NavigationBar  = (props) => {
     //TODO: add login
@@ -10,15 +12,16 @@ const NavigationBar  = (props) => {
     let location = useLocation();
     const [loggedIn, setLoggedIn] = useState(props.login.login);
     const [loginCredential, setLoginCredential] = useState({
-                                                                       username: props.login.username,
-                                                                       password: props.login.password
+                                                                       email: props.login.email,
+                                                                       userId: props.login.userId,
                                                                      });
 
-    const handleLogOut  = () => {
+    const handleLogOut  = (firebase) => {
+        firebase.doSignOut();
         setLoggedIn(false)
         setLoginCredential({
-            username: "",
-            password: ""
+            userId: "",
+            email: ""
         })
         if(location.pathname !== "/") {
             history.push(
@@ -39,8 +42,8 @@ const NavigationBar  = (props) => {
             "/user",
             {login: {
                 login: loggedIn,
-                username: loginCredential.username,
-                password: loginCredential.password
+                email: loginCredential.email,
+                userId: loginCredential.userId
                 }}
         )
     }
@@ -61,7 +64,11 @@ const NavigationBar  = (props) => {
                 <UserButton text = {userText} onClick = {getUser}/>
             </div>
             <div className = {loggedIn == true ? style.show : style.hide}>
-                <UserButton text = {logoutText} onClick = {handleLogOut}/>
+                <FirebaseContext.Consumer>
+                    {firebase =>
+                        <UserButton text = {logoutText} onClick = {() => handleLogOut(firebase)}/>
+                    }
+                </FirebaseContext.Consumer>
             </div>
             </div>
         </div>

@@ -4,6 +4,8 @@ import style from "./UserPage.module.css"
 import UserProfile from "./UserInfo/UserProfile";
 import NavigationBar from "../NavigationBar/NavigationBar";
 import SubscriptionList from "./UserInfo/SubscriptionList";
+import {FirebaseContext} from "../Firebase";
+import CompanyInfo from "../CompanyPage/CompanyDetail/CompanyInfo";
 
 const UserPage = (props) => {
     let location = useLocation();
@@ -15,8 +17,12 @@ const UserPage = (props) => {
         <div className={style.background}>
             <div className={style.container}>
                 <NavigationBar login = {login}/>
-                <UserProfile username = {login.username} />
-                <SubscriptionList sub={subscription} login = {login}/>
+                <UserProfile email = {login.email} userId = {login.userId} />
+                <FirebaseContext.Consumer>
+                    {firebase =>
+                        <SubscriptionList sub={subscription} login = {login} firebase = {firebase}/>
+                    }
+                </FirebaseContext.Consumer>
             </div>
         </div>
     )

@@ -7,38 +7,65 @@ import {useHistory} from "react-router-dom";
 const SubscriptionList = (props) => {
     const [fetchedData, setFetchedData] = useState({});
     let history = useHistory();
+    let sub = ""
+
     useEffect(() => {
-        const fetchData = async () => {
+        props.firebase.user(props.login.userId).once('value', async (snapshot) => {
+            sub = snapshot.val();
 
-            let variable = "";
-            for(var i = 0; i < props.sub.length - 1; i++) {
-                variable = variable + props.sub[i] + ","
+            if(sub != null) {
+                let variable = "";
+                let i = 0;
+                for(let key in sub) {
+                    variable = variable + key
+                    if(i < Object.keys(sub).length - 1) {
+                        variable = variable + ","
+                    }
+                    i ++;
+                }
+
+
+                const response = await fetch(`https://financialmodelingprep.com/api/v3/quote/${variable}?apikey=56f622a93b55019c5a0875058fc58f13`);
+                const responseJson = await response.json();
+                setFetchedData(responseJson);
+            } else if(!isEmpty(fetchedData)){
+                setFetchedData([])
             }
-            variable = variable + props.sub[props.sub.length - 1];
+        })
+    }, [])
 
-            const response = await fetch(`https://financialmodelingprep.com/api/v3/quote/${variable}?apikey=56f622a93b55019c5a0875058fc58f13`);
-            const responseJson = await response.json();
-            setFetchedData(responseJson);
-        };
-        if(isEmpty(fetchedData)) {
-            fetchData()
-        }
-    }, [fetchedData]);
 
-    const click = (index) => {
-        // let subs = [...subscribe];
-        // let item = {...subs[index]};
-        // item.isSubscribed = !item.isSubscribed;
-        // subs[index] = item;
-        // setSubscribe(subs);
-        // console.log(subscribe[`${index}`])
-        setFetchedData(fetchedData.filter((e, i) => i !== index))
+
+    const click = (symbol) => {
+        props.firebase.user(props.login.userId).child(symbol).remove();
+        props.firebase.user(props.login.userId).once('value', async (snapshot) => {
+            sub = snapshot.val();
+
+            if(sub != null) {
+                let variable = "";
+                let i = 0;
+                for(let key in sub) {
+                    variable = variable + key
+                    if(i < Object.keys(sub).length - 1) {
+                        variable = variable + ","
+                    }
+                    i ++;
+                }
+
+
+                const response = await fetch(`https://financialmodelingprep.com/api/v3/quote/${variable}?apikey=56f622a93b55019c5a0875058fc58f13`);
+                const responseJson = await response.json();
+                setFetchedData(responseJson);
+            } else if(!isEmpty(fetchedData)){
+                setFetchedData([])
+            }
+        })
     }
 
-    const viewDetail = async (index) => {
-        const response = await fetch(`https://financialmodelingprep.com/api/v3/profile/${props.sub[index]}?apikey=56f622a93b55019c5a0875058fc58f13`);
+    const viewDetail = async (symbol) => {
+        const response = await fetch(`https://financialmodelingprep.com/api/v3/profile/${symbol}?apikey=56f622a93b55019c5a0875058fc58f13`);
         const responseJson = await response.json();
-        const newsResponse = await fetch(`https://financialmodelingprep.com/api/v3/stock_news?tickers=${props.sub[index]}&limit=10&apikey=56f622a93b55019c5a0875058fc58f13`);
+        const newsResponse = await fetch(`https://financialmodelingprep.com/api/v3/stock_news?tickers=${symbol}&limit=10&apikey=56f622a93b55019c5a0875058fc58f13`);
         const newsResponseJson = await newsResponse.json();
         history.push(
             "/company",
@@ -53,15 +80,15 @@ const SubscriptionList = (props) => {
     return (
         <ul className={style.container}>
         {
-            Object.values(fetchedData).map((item, index) => (
-                <li key={index} className={style.textInfo}>
-                    <div className={style.title} onClick={() => viewDetail(index)}>{item.name}</div>
+            Object.values(fetchedData).map((item) => (
+                <li key={item.symbol} className={style.textInfo}>
+                    <div className={style.title} onClick={() => viewDetail(item.symbol)}>{item.name}</div>
                     <div className={style.sub}>
                         <div className={style.stockPriceBlock}>
                             <div className={item.change >= 0 ? style.price_red : style.price_green}>{`$${item.price}`}</div>
                             <div className={item.change >= 0 ? style.stock_red : style.stock_green}>{item.change >=0 ? `(+ ${item.change})` : `( ${item.change})`}</div>
                         </div>
-                        <div onClick={ () => click(index)} className={style.heartSub}></div>
+                        <div onClick={ () => click(item.symbol)} className={style.heartSub}></div>
                     </div>
                 </li>
             ), this)
