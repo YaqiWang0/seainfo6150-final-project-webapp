@@ -80,7 +80,7 @@ function App() {
                 <Route path="/">
                     <HomePage fetchedData = {fetchedData} gainer = {gainer} loser = {loser}/>
                 </Route>
-
+                <Route path="*" component={Error} />
 
             </Switch>
         </div>
