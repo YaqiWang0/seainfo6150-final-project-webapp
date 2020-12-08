@@ -40,10 +40,9 @@ const CompanyInfo = (props) => {
             <div className={style.container}>
               <img src={props.info[0].image} alt = {props.info[0].companyName} className={style.pic}/>
                 <div className={style.text_block}>
-
-                <div className={style.quote_left}>"</div>
-                <div className={style.des}>{props.info[0].description}</div>
-                <div className={style.quote_right}>"</div>
+                    <div className={style.quote_left}>"</div>
+                    <div className={style.des}>{props.info[0].description}</div>
+                    <div className={style.quote_right}>"</div>
                 </div>
             </div>
         </div>

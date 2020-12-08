@@ -1,29 +1,10 @@
-.ranking_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-top: 5%;
-}
 
-.gainer {
-    width: 30%;
-    border-radius: 10%;
-    background-color: black;
-    padding: 3vh;
-}
 
 .gainer_price_text {
     color: red;
     padding-top: 0.5em;
     font-size: 2em;
     font-weight: bold;
-}
-
-.loser {
-    width: 30%;
-    border-radius: 10%;
-    background-color: black;
-    padding: 3vh;
 }
 
 .loser_price_text {
@@ -37,7 +18,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
     width: 40%;
     height: 100%;
 }
@@ -51,7 +31,6 @@
     color: gray;
     font-family: Serif;
     width: 100%;
-    display: block;
     overflow: hidden;
     white-space: nowrap;
     text-align: left;
@@ -70,4 +49,68 @@
 .line {
     border: 1px solid white;
     opacity: 50%;
+}
+@media screen and (min-width: 0px){
+    .company_name {
+        display: none;
+    }
+
+    .ranking_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 5%;
+        align-items: center;
+    }
+
+    .gainer {
+        width: 80%;
+        border-radius: 10%;
+        background-color: black;
+        padding: 3vh;
+        margin-bottom: 3vh;
+    }
+
+    .loser {
+        width: 80%;
+        border-radius: 10%;
+        background-color: black;
+        padding: 3vh;
+    }
+
+    .name {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .ranking_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 5%;
+    }
+
+    .gainer {
+        width: 40%;
+        border-radius: 10%;
+        background-color: black;
+        padding: 3vh;
+        margin-bottom: 0;
+    }
+
+    .loser {
+        width: 40%;
+        border-radius: 10%;
+        background-color: black;
+        padding: 3vh;
+    }
+
+    .company_name {
+        display: block;
+    }
+
+    .name {
+        justify-content: space-between;
+    }
 }

@@ -8,7 +8,7 @@ const UserProfile = (props) => {
             <div className={style.pic}/>
             </div>
             <div className={style.username}>{props.email}</div>
-            <div className={style.username}>{props.userId}</div>
+            <div className={style.userId}>{props.userId}</div>
         </div>
     )
 }

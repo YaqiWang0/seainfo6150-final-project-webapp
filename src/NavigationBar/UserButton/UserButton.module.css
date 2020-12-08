@@ -24,7 +24,7 @@ nav ul li {
     overflow: hidden;
     z-index: 1;
     transition: 0.2s;
-    margin: 1em;
+    margin: 0.5em;
 }
 
 nav ul li span {

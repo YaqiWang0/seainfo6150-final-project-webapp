@@ -1,9 +1,9 @@
 import React, {useState} from "react"
 import SearchBar from "./SearchBar/SearchBar";
 import UserButton from "./UserButton/UserButton";
+import Logo from "./Logo/Logo";
 import style from "./NavigationBar.module.css"
 import { useHistory, useLocation } from "react-router-dom";
-import LoginPage from "../LoginAndSignUp/LoginPage";
 import {FirebaseContext} from "../Firebase";
 
 const NavigationBar  = (props) => {
@@ -55,21 +55,24 @@ const NavigationBar  = (props) => {
 
     return (
         <div className={style.container}>
-            <SearchBar login = {loggedIn} credential = {loginCredential}/>
-            <div className={style.buttons}>
-            <div className = {loggedIn == true ? style.hide : style.show}>
-                <UserButton text = {loginText} onClick = {onLogin}/>
-            </div>
-            <div className = {loggedIn == true ? style.show : style.hide}>
-                <UserButton text = {userText} onClick = {getUser}/>
-            </div>
-            <div className = {loggedIn == true ? style.show : style.hide}>
-                <FirebaseContext.Consumer>
-                    {firebase =>
-                        <UserButton text = {logoutText} onClick = {() => handleLogOut(firebase)}/>
-                    }
-                </FirebaseContext.Consumer>
-            </div>
+            <Logo login = {loggedIn} credential = {loginCredential}/>
+            <div className={style.func}>
+                <SearchBar login = {loggedIn} credential = {loginCredential}/>
+                <div className={style.buttons}>
+                    <div className = {loggedIn == true ? style.hide : style.show}>
+                        <UserButton text = {loginText} onClick = {onLogin}/>
+                    </div>
+                    <div className = {loggedIn == true ? style.show : style.hide}>
+                        <UserButton text = {userText} onClick = {getUser}/>
+                    </div>
+                    <div className = {loggedIn == true ? style.show : style.hide}>
+                        <FirebaseContext.Consumer>
+                            {firebase =>
+                                <UserButton text = {logoutText} onClick = {() => handleLogOut(firebase)}/>
+                            }
+                        </FirebaseContext.Consumer>
+                    </div>
+                </div>
             </div>
         </div>
     )

@@ -1,6 +1,5 @@
 .container {
     display: flex;
-    flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
@@ -27,7 +26,7 @@
     width: 100%;
     text-align: center;
     color: white;
-    font-size: large;
+    font-size: 1.5vmin;
     padding: 1em;
 }
 
@@ -35,18 +34,17 @@
     width: 100%;
     text-align: right;
     color: white;
-    font-size: 4em;
+    font-size: 4vmin;
 }
 
 .quote_left {
     width: 100%;
     text-align: left;
     color: white;
-    font-size: 5em;
+    font-size: 4vmin;
 }
 
 .text_block {
-    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -95,7 +93,6 @@
     width: 70%;
     text-align: left;
     color: darkgreen;
-    font-size: 2vw;
     margin-top: 1em;
 }
 
@@ -103,21 +100,18 @@
     width: 70%;
     text-align: left;
     color: darkred;
-    font-size: 2.5vw;
 }
 
 .stock_green {
     width: 70%;
     text-align: left;
     color: darkgreen;
-    font-size: 1.5vw;
 }
 
 .stock_red {
     width: 70%;
     text-align: left;
     color: darkred;
-    font-size: 1vw;
 }
 
 
@@ -192,4 +186,86 @@
 .show {
     display: block;
     cursor: pointer;
+}
+
+@media screen and (min-width: 0px){
+    .container {
+        flex-direction: column;
+    }
+
+    .text_block {
+        width: 80%;
+    }
+
+    .des {
+        font-size: 2.5vmin;
+    }
+
+    .price_red {
+        font-size: 4vmin;
+    }
+
+    .price_green {
+        font-size: 4vmin;
+    }
+
+    .stock_red {
+        font-size: 2.5vmin;
+    }
+
+    .stock_green {
+        font-size: 2.5vmin;
+    }
+}
+
+@media screen and (min-width: 300px){
+    .des {
+        font-size: 2vmin;
+    }
+
+    .stock_red {
+        font-size: 2vmin;
+    }
+
+    .stock_green {
+        font-size: 2vmin;
+    }
+
+    .price_red {
+        font-size: 3vmin;
+    }
+
+    .price_green {
+        font-size: 3vmin;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .container {
+        flex-direction: row;
+    }
+
+    .text_block {
+        width: 50%;
+    }
+
+    .des {
+        font-size: 1.5vmin;
+    }
+
+    .price_red {
+        font-size: 2.5vmin;
+    }
+
+    .price_green {
+        font-size: 2.5vmin;
+    }
+
+    .stock_red {
+        font-size: 1.5vmin;
+    }
+
+    .stock_green {
+        font-size: 1.5vmin;
+    }
 }

@@ -67,7 +67,7 @@
 }
 
 .stock_name {
-    font-size: 3em;
+    font-size: 4vmin;
     color: white;
     text-align: left;
     width: 100%;
@@ -82,7 +82,7 @@
     overflow: hidden;
     white-space: nowrap;
     text-align: left;
-    font-size: large;
+    font-size: 1.5vmin;
     cursor: inherit;
 }
 

@@ -12,7 +12,7 @@ const Slides = (props) => {
     const clickDot = (e, index) => {
         e.stopPropagation()
         setSelect(index);
-        setBackGroundImage({backgroundImage: 'url(' + props.news[select].image + ')'})
+        setBackGroundImage({backgroundImage: 'url(' + props.news[select + 5].image + ')'})
         console.log(backgroundImage)
     }
 

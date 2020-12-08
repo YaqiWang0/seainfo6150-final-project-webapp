@@ -1,18 +1,6 @@
-.container {
-    display: flex;
-    flex-direction: row;
-    border-radius: 5%;
-    padding: 1em;
-    cursor: pointer;
-}
-
-.pic {
-    width: 30%;
-}
 
 .title {
-    font-size: x-large;
-    width: 60%;
+    font-size: 2vmin;
     text-align: left;
     font-weight: bold;
     font-family: "Charter";
@@ -20,24 +8,21 @@
 }
 
 .symbol {
-    font-size: large;
+    font-size: 1.5vmin;
     color: #767676;
     font-family: "Arial Rounded MT Bold";
 }
 
 .content {
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: left;
-    text-space: 3em;
+    text-space: 3vmin;
     color: white;
 }
 
 .titleBlock {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 3vh;
+    margin-bottom: 3vmin;
     width: 100%;
 }
 
@@ -46,5 +31,105 @@
     flex-direction: column;
     align-items: flex-start;
     width: 70%;
-    padding-left: 1em;
+    padding-left: 1vmin;
+}
+
+@media screen and (min-width: 0px) {
+    .pic {
+        width: 90%;
+        height: 100%;
+        max-height: 400px;
+    }
+
+    .title {
+        margin-bottom: 1vmin;
+        width: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5%;
+        padding: 1vmin;
+        cursor: pointer;
+        align-items: center;
+    }
+
+    .contentBlock {
+        width: 90%;
+    }
+
+    .content {
+        display: none;
+    }
+
+    .titleBlock {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .pic {
+        width: 90%;
+        height: 100%;
+        max-height: 400px;
+
+    }
+
+    .content {
+        display: block;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5%;
+        padding: 1vmin;
+        cursor: pointer;
+        align-items: center;
+    }
+
+    .contentBlock {
+        width: 90%;
+    }
+
+    .title {
+        width: 75%;
+        margin-bottom: 0;
+    }
+
+    .titleBlock {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .pic {
+        width: 30%;
+        height: 100%;
+        max-height: 400px;
+
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        border-radius: 5%;
+        padding: 1vmin;
+        cursor: pointer;
+        align-items: center;
+    }
+
+    .contentBlock {
+        width: 70%;
+    }
+
+    .content {
+        display: block;
+    }
+
+
 }

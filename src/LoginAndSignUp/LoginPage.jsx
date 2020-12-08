@@ -60,7 +60,7 @@ const LoginPage = (props) => {
                             <div className={style.sign_in_htm}>
                                 <form action="" onSubmit={signInAction}>
                                     <div className={style.group}>
-                                        <label htmlFor="user" className={style.label}>Username</label>
+                                        <label htmlFor="user" className={style.label}>Email</label>
                                         <input id="user" type="text" name="usernameLogin" className={style.input}/>
                                     </div>
                                     <div className={style.group}>
@@ -79,7 +79,7 @@ const LoginPage = (props) => {
                             <div className={style.sign_up_htm}>
                                 <form action="" onSubmit={signUpAction}>
                                     <div className={style.group}>
-                                        <label htmlFor="user" className={style.label}>Username</label>
+                                        <label htmlFor="user" className={style.label}>Email</label>
                                         <input id="user" type="text" name="usernameSignup" className={style.input}/>
                                     </div>
                                     <div className={style.group}>

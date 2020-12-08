@@ -7,8 +7,10 @@ a{color:inherit;text-decoration:none}
 .login_wrap{
 
     margin:auto;
-    max-width:525px;
-    min-height:670px;
+    width:50vmin;
+    height:60vmin;
+    min-width: 400px;
+    min-height: 600px;
     position:relative;
     background:url("../pictures/landscape-3549862_1920 (1).jpg");
     background-size: cover;
@@ -19,7 +21,7 @@ a{color:inherit;text-decoration:none}
     width:100%;
     height:100%;
     position:absolute;
-    padding:90px 70px 50px 70px;
+    padding:9vmin 7vmin 5vmin 7vmin;
     background: rgba(0, 0, 0, 0.45);
 }
 .login_html .sign_in_htm,
@@ -163,4 +165,9 @@ input:focus {
 
 a {
     cursor: pointer;
+}
+
+.input .button {
+    height: 8vmin;
+    max-height: 40px;
 }

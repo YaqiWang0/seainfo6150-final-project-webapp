@@ -71,11 +71,14 @@ function App() {
                 <Route path="/user">
                     <UserPage />
                 </Route>
-                <Route path="/" >
+                <Route path="/error" component={Error} />
+                <Route path="/" exact>
                     <HomePage fetchedData = {fetchedData} gainer = {gainer} loser = {loser}/>
                 </Route>
-                <Route path="/error" component={Error} />
-                <Route component={Error} />
+                <Route path="/*" component={Error} />
+
+
+
             </Switch>
         </div>
     );
