@@ -54,32 +54,35 @@ function App() {
 
     return (isEmpty(fetchedData) || isEmpty(gainer) || isEmpty(loser)) ? null : (
         <div className={style.App}>
-            <HashRouter>
             <Switch>
-                <Route path="/" exact>
-                    <HomePage fetchedData = {fetchedData} gainer = {gainer} loser = {loser}/>
-                </Route>
-                <Route path="/search" exact>
+
+                <Route path="/search">
                     <SearchPage />
                 </Route>
-                <Route path="/company" exact>
+                <Route path="/company">
                     <CompanyPage />
                 </Route>
-                <Route path="/login_sign_up" exact>
+                <Route path="/login_sign_up">
                     <FirebaseContext.Consumer>
                         {firebase =>
                             <LoginPage firebase = {firebase}/>
                         }
                     </FirebaseContext.Consumer>
                 </Route>
-                <Route path="/user" exact>
+                <Route path="/user">
                     <UserPage />
                 </Route>
-                <Route path="/error" exact component={Error} />
-                <Route component={Error} />
+                <Route path="/error" component={Error} />
+                <Route path="/seainfo6150-final-project-webapp/">
+                    <HomePage fetchedData = {fetchedData} gainer = {gainer} loser = {loser}/>
+                </Route>
+                <Route path="/seainfo6150-final-project-webapp/*" component={Error} exact/>
+                <Route path="/">
+                    <HomePage fetchedData = {fetchedData} gainer = {gainer} loser = {loser}/>
+                </Route>
+
 
             </Switch>
-                </HashRouter>
         </div>
     );
 }
