@@ -1,6 +1,6 @@
 import style from './App.css';
 import React, { useEffect, useState } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, HashRouter } from "react-router-dom";
 import { isEmpty } from "lodash";
 import { FirebaseContext } from './Firebase';
 
@@ -54,32 +54,32 @@ function App() {
 
     return (isEmpty(fetchedData) || isEmpty(gainer) || isEmpty(loser)) ? null : (
         <div className={style.App}>
+            <HashRouter>
             <Switch>
-                <Route path="/search">
+                <Route path="/" exact>
+                    <HomePage fetchedData = {fetchedData} gainer = {gainer} loser = {loser}/>
+                </Route>
+                <Route path="/search" exact>
                     <SearchPage />
                 </Route>
-                <Route path="/company">
+                <Route path="/company" exact>
                     <CompanyPage />
                 </Route>
-                <Route path="/login_sign_up">
+                <Route path="/login_sign_up" exact>
                     <FirebaseContext.Consumer>
                         {firebase =>
                             <LoginPage firebase = {firebase}/>
                         }
                     </FirebaseContext.Consumer>
                 </Route>
-                <Route path="/user">
+                <Route path="/user" exact>
                     <UserPage />
                 </Route>
-                <Route path="/error" component={Error} />
-                <Route path="/" exact>
-                    <HomePage fetchedData = {fetchedData} gainer = {gainer} loser = {loser}/>
-                </Route>
-                <Route path="/*" component={Error} />
-
-
+                <Route path="/error" exact component={Error} />
+                <Route component={Error} />
 
             </Switch>
+                </HashRouter>
         </div>
     );
 }
