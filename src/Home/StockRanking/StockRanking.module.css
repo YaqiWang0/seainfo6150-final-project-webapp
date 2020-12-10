@@ -57,8 +57,7 @@
 
 .title {
     font-size: 3vmin;
-    color: gray;
-    opacity: 70%;
+    color: rgba(128, 128, 128, 0.7);
     text-align: left;
     font-weight: bold;
     font-family: 'Lato', sans-serif;
