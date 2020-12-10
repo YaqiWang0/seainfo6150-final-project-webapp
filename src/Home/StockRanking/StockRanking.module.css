@@ -1,17 +1,24 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=PT+Sans:wght@700&display=swap');
 
 .gainer_price_text {
     color: red;
     padding-top: 0.5em;
     font-size: 2em;
-    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
 }
 
 .loser_price_text {
     color: green;
     font-size: 2em;
     padding-top: 0.5em;
-    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.list {
+    background-color: black;
+    padding: 3vh;
 }
 
 .name {
@@ -25,11 +32,13 @@
 .stock_name {
     font-size: large;
     color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
 }
 
 .company_name {
     color: gray;
-    font-family: Serif;
+    font-family: 'Lato', sans-serif;
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
@@ -44,6 +53,15 @@
     justify-content: space-between;
     height: 3em;
     margin: 1vh;
+}
+
+.title {
+    font-size: 3vmin;
+    color: gray;
+    opacity: 40%;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
 }
 
 .line {
@@ -65,17 +83,15 @@
 
     .gainer {
         width: 80%;
-        border-radius: 10%;
-        background-color: black;
-        padding: 3vh;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
         margin-bottom: 3vh;
     }
 
     .loser {
         width: 80%;
-        border-radius: 10%;
-        background-color: black;
-        padding: 3vh;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
     }
 
     .name {
@@ -93,17 +109,15 @@
 
     .gainer {
         width: 40%;
-        border-radius: 10%;
-        background-color: black;
-        padding: 3vh;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
         margin-bottom: 0;
     }
 
     .loser {
         width: 40%;
-        border-radius: 10%;
-        background-color: black;
-        padding: 3vh;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
     }
 
     .company_name {

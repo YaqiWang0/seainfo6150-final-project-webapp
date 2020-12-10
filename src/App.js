@@ -10,6 +10,7 @@ import CompanyPage from "./CompanyPage/CompanyPage";
 import LoginPage from "./LoginAndSignUp/LoginPage";
 import UserPage from "./UserPage/UserPage";
 import Error from "./Error/Error"
+import Footer from "./Footer/Footer";
 
 
 
@@ -73,16 +74,18 @@ function App() {
                     <UserPage />
                 </Route>
                 <Route path="/error" component={Error} />
-                <Route path="/seainfo6150-final-project-webapp/">
+                <Route path="/seainfo6150-final-project-webapp/" exact>
                     <HomePage fetchedData = {fetchedData} gainer = {gainer} loser = {loser}/>
                 </Route>
-                <Route path="/seainfo6150-final-project-webapp/*" component={Error} exact/>
-                <Route path="/">
+                <Route path="/seainfo6150-final-project-webapp/*" component={Error}/>
+                <Route path="/" exact>
                     <HomePage fetchedData = {fetchedData} gainer = {gainer} loser = {loser}/>
                 </Route>
-                <Route path="*" component={Error} />
+                <Route path="/*" component={Error}/>
+
 
             </Switch>
+            <Footer/>
         </div>
     );
 }

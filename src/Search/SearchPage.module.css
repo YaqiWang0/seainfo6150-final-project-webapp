@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Heebo:wght@400;700&display=swap');
 .container {
     margin: 0 auto;
     width: 80%;
@@ -5,7 +6,6 @@
     padding-top: 0;
     display: flex;
     flex-direction: column;
-
 }
 
 .background {
@@ -17,12 +17,14 @@
     color: white;
     font-size: 3vmin;
     padding-left: 1em ;
+    font-family: 'Heebo', sans-serif;
 }
 
 .searchTextTitle {
     color: dimgray;
     font-size: 6vmin;
     text-align: left;
+    font-family: 'Heebo', sans-serif;
 }
 
 .searchTextBlock {

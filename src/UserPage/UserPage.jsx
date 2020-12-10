@@ -10,19 +10,24 @@ import CompanyInfo from "../CompanyPage/CompanyDetail/CompanyInfo";
 const UserPage = (props) => {
     let location = useLocation();
     let login = location.state.login;
-    let subscription = ["AAPL", "FB", "GOOG"]
-
 
     return (
         <div className={style.background}>
             <div className={style.container}>
                 <NavigationBar login = {login}/>
-                <UserProfile email = {login.email} userId = {login.userId} />
                 <FirebaseContext.Consumer>
                     {firebase =>
-                        <SubscriptionList sub={subscription} login = {login} firebase = {firebase}/>
+                        <UserProfile email={login.email} userId={login.userId} firebase = {firebase}/>
                     }
                 </FirebaseContext.Consumer>
+                <div>
+                    <div className={style.subText}>SUBSCRIPTIONS</div>
+                    <FirebaseContext.Consumer>
+                        {firebase =>
+                            <SubscriptionList login = {login} firebase = {firebase}/>
+                        }
+                    </FirebaseContext.Consumer>
+                </div>
             </div>
         </div>
     )

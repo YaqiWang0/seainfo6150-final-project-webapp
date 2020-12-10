@@ -10,12 +10,15 @@ const Loser = (props) => {
     }
     return (
         <div  className={style.loser}>
+            <div className={style.title}> Most Loser Stock Today</div>
+            <div className={style.list}>
             {loser.map((item) => (
                 <div>
                 <RankingItem isGainer = {false} stock = {item} key = {item.ticker} login = {props.login}/>
                 <hr className={style.line}/>
                 </div>
             ))}
+            </div>
         </div>
     )
 }

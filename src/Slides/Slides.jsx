@@ -43,11 +43,11 @@ const Slides = (props) => {
 return (
     <div className={style.container} style={backgroundImage} onClick={click}>
         <div className={style.cover}>
-            <div className={style.left_arrow}>
-                <ArrowButton isRight = {false} onClick = {(e) => clickButton(e, false)}/>
+            <div className={style.left_arrow} onClick = {(e) => clickButton(e, false)}>
+                <ArrowButton isRight = {false} />
             </div>
-            <div className={style.right_arrow}>
-                <ArrowButton isRight = {true} onClick = {(e) => clickButton(e, true)}/>
+            <div className={style.right_arrow} onClick = {(e) => clickButton(e, true)}>
+                <ArrowButton isRight = {true} />
             </div>
             <div className={style.text}>{props.news[select].title}</div>
             <ul className={style.dots}>

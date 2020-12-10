@@ -20,7 +20,6 @@ const Logo = (props) => {
         <div className={style.container} onClick={click}>
         <div className={style.pic}>
         </div>
-            <div className={style.name}>Stock Time</div>
         </div>
     )
 }

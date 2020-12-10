@@ -11,15 +11,18 @@ const Gainer = (props) => {
 
 
     return (
-        <div className={style.gainer}>
-            {
-                gainer.map((item) => (
-                <div>
-            <RankingItem isGainer = {true} stock = {item} key = {item.ticker} login = {props.login}/>
+        <div  className={style.gainer}>
+            <div className={style.title}> Most Gainer Stock Today</div>
+            <div className={style.list}>
+                {
+                    gainer.map((item) => (
+                    <div>
+                <RankingItem isGainer = {true} stock = {item} key = {item.ticker} login = {props.login}/>
 
-            <hr className={style.line}/>
-                </div>
-            ))}
+                <hr className={style.line}/>
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }

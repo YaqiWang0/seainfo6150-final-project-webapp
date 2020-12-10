@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600;700&display=swap');
+
 .container {
     margin: 0 auto;
     width: 80%;
@@ -10,4 +12,13 @@
 
 .background {
     text-align: center;
+}
+
+.subText {
+    color: #757575;
+    width: 100%;
+    background-color: #353535;
+    padding: 2vmin;
+    font-size: 2em;
+    font-family: 'Source Sans Pro', sans-serif;
 }

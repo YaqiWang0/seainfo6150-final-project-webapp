@@ -1,7 +1,7 @@
 .pic {
     background-image: url("../../pictures/Logo.png");
-    min-width: 10vmin;
-    min-height: 10vmin;
+    min-width: 20vmin;
+    min-height: 8vmin;
     cursor: pointer;
     background-size: cover;
 
