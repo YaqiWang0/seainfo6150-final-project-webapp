@@ -73,7 +73,7 @@ function App() {
                 <Route path="/user">
                     <UserPage />
                 </Route>
-                <Route path="/error" component={Error} />
+                <Route path="/seainfo6150-final-project-webapp/error" exact component={Error} />
                 <Route path="/seainfo6150-final-project-webapp/" exact>
                     <HomePage fetchedData = {fetchedData} gainer = {gainer} loser = {loser}/>
                 </Route>
