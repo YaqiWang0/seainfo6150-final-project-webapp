@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsList test render successfully 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div>
+      <hr
+        class="line"
+      />
+      <div
+        class="container"
+      >
+        <img
+          alt="5 Stocks Growing Earnings"
+          class="pic"
+          src="https://cdn.snapi.dev/images/v1/h/h/bussines-services9.jpg"
+        />
+        <div
+          class="contentBlock"
+        >
+          <div
+            class="titleBlock"
+          >
+            <div
+              class="title"
+            >
+              5 Stocks Growing Earnings
+            </div>
+            <div
+              class="symbol"
+            >
+              NSIT
+            </div>
+          </div>
+          <div
+            class="content"
+          >
+            According to the GuruFocus All-in-One Screener, a Premium feature, as of Dec. 11, the following guru-held companies have positive future earnings estimates from Morningstar analysts.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <hr
+        class="line"
+      />
+      <div
+        class="container"
+      >
+        <img
+          alt="Pfizer Analyst Breaks Down The FDA Process For Coronavirus Vaccine Candidate"
+          class="pic"
+          src="https://cdn.snapi.dev/images/v1/m/q/medicine-5103043-1920-27.jpg"
+        />
+        <div
+          class="contentBlock"
+        >
+          <div
+            class="titleBlock"
+          >
+            <div
+              class="title"
+            >
+              Pfizer Analyst Breaks Down The FDA Process For Coronavirus Vaccine Candidate
+            </div>
+            <div
+              class="symbol"
+            >
+              PFE
+            </div>
+          </div>
+          <div
+            class="content"
+          >
+            Pfizer Inc. (NYSE: PFE) and BioNTech SE's – ADR (NASDAQ: BNTX) coronavirus vaccine candidate passed the Adcom test, with the FDA panel voting 17-4 in favor of its risk-benefit profile in individuals 16 and older.  Here's SVB Leerink analyst Geoffrey Porges' take on the dynamics of the Adcom vote.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <hr
+        class="line"
+      />
+      <div
+        class="container"
+      >
+        <img
+          alt="Oil futures inch lower for the session, but climb for the week"
+          class="pic"
+          src="https://cdn.snapi.dev/images/v1/5/p/etf21.jpg"
+        />
+        <div
+          class="contentBlock"
+        >
+          <div
+            class="titleBlock"
+          >
+            <div
+              class="title"
+            >
+              Oil futures inch lower for the session, but climb for the week
+            </div>
+            <div
+              class="symbol"
+            >
+              OIL
+            </div>
+          </div>
+          <div
+            class="content"
+          >
+            Oil futures inched lower on Friday, a day after settling at their highest in nine months, but tallied a gain for the week, amid expectations that the approval of a COVID-19 vaccine in the U.S. will provide a lift to the economy, and demand for energy. January West Texas Intermediate crude fell 21 cents, or nearly 2.5%, to settle at $46.57 a barrel on the New York Mercantile Exchange.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <hr
+        class="line"
+      />
+      <div
+        class="container"
+      >
+        <img
+          alt="White House threatens to fire FDA chief unless Pfizer Covid vaccine approved Friday, report says"
+          class="pic"
+          src="https://cdn.snapi.dev/images/v1/7/d/106256485-1574272467663gettyimages-1183636908r.jpg"
+        />
+        <div
+          class="contentBlock"
+        >
+          <div
+            class="titleBlock"
+          >
+            <div
+              class="title"
+            >
+              White House threatens to fire FDA chief unless Pfizer Covid vaccine approved Friday, report says
+            </div>
+            <div
+              class="symbol"
+            >
+              PFE
+            </div>
+          </div>
+          <div
+            class="content"
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      <hr
+        class="line"
+      />
+      <div
+        class="container"
+      >
+        <img
+          alt="Becton, Dickinson & Co. Is a Highly Profitable, Recession-Proof Company"
+          class="pic"
+          src="https://cdn.snapi.dev/images/v1/7/w/becton-dickinson-covidjpgquality90stripall.jpg"
+        />
+        <div
+          class="contentBlock"
+        >
+          <div
+            class="titleBlock"
+          >
+            <div
+              class="title"
+            >
+              Becton, Dickinson & Co. Is a Highly Profitable, Recession-Proof Company
+            </div>
+            <div
+              class="symbol"
+            >
+              BDXA
+            </div>
+          </div>
+          <div
+            class="content"
+          >
+            The health care sector is considered a defensive sector as people will seek out treatment for illness and aliments regardless of the status of the economy. Many companies in this sector literally provide products that consumers cannot live without.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

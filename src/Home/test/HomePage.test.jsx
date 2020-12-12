@@ -4,15 +4,6 @@ import data from "../test/data";
 
 
 describe("Home Page test", () => {
-    jest.mock('react-router-dom', () => ({
-        ...jest.requireActual('react-router-dom'), // use actual for all non-hook parts
-        useParams: () => ({
-            userId: '12345',
-            login: true,
-            email: 'test@gmail.com'
-        }),
-        useRouteMatch: () => ({ url: '/company/company-id1/team/team-id1' }),
-    }));
     it("render correctly when login", () => {
         jest.mock('react-router-dom', () => ({
             ...jest.requireActual('react-router-dom'), // use actual for all non-hook parts

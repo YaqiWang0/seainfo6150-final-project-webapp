@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsItem test render successfully 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <img
+      alt="5 Stocks Growing Earnings"
+      class="pic"
+      src="https://cdn.snapi.dev/images/v1/h/h/bussines-services9.jpg"
+    />
+    <div
+      class="contentBlock"
+    >
+      <div
+        class="titleBlock"
+      >
+        <div
+          class="title"
+        >
+          5 Stocks Growing Earnings
+        </div>
+        <div
+          class="symbol"
+        >
+          NSIT
+        </div>
+      </div>
+      <div
+        class="content"
+      >
+        According to the GuruFocus All-in-One Screener, a Premium feature, as of Dec. 11, the following guru-held companies have positive future earnings estimates from Morningstar analysts.
+      </div>
+    </div>
+  </div>
+</div>
+`;

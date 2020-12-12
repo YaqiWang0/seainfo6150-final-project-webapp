@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SubscriptionList test render successfully 1`] = `
+<div>
+  <ul
+    class="container"
+  />
+</div>
+`;

@@ -105,6 +105,7 @@ exports[`Home Page test render correctly when login 1`] = `
           >
             <div
               class="left_arrow"
+              role="left"
             >
               <a
                 class="arrow_left"
@@ -113,6 +114,7 @@ exports[`Home Page test render correctly when login 1`] = `
             </div>
             <div
               class="right_arrow"
+              role="right"
             >
               <a
                 class="arrow_right"
@@ -129,6 +131,7 @@ exports[`Home Page test render correctly when login 1`] = `
             >
               <li
                 class="dotSelected"
+                role="dot"
               />
               <li
                 class="dotUnSelected"
@@ -163,6 +166,7 @@ exports[`Home Page test render correctly when login 1`] = `
             <div>
               <div
                 class="ranking_item"
+                role="click"
               >
                 <div
                   class="name"
@@ -191,6 +195,7 @@ exports[`Home Page test render correctly when login 1`] = `
             <div>
               <div
                 class="ranking_item"
+                role="click"
               >
                 <div
                   class="name"
@@ -219,6 +224,7 @@ exports[`Home Page test render correctly when login 1`] = `
             <div>
               <div
                 class="ranking_item"
+                role="click"
               >
                 <div
                   class="name"
@@ -247,6 +253,7 @@ exports[`Home Page test render correctly when login 1`] = `
             <div>
               <div
                 class="ranking_item"
+                role="click"
               >
                 <div
                   class="name"
@@ -275,6 +282,7 @@ exports[`Home Page test render correctly when login 1`] = `
             <div>
               <div
                 class="ranking_item"
+                role="click"
               >
                 <div
                   class="name"
@@ -316,6 +324,7 @@ exports[`Home Page test render correctly when login 1`] = `
             <div>
               <div
                 class="ranking_item"
+                role="click"
               >
                 <div
                   class="name"
@@ -344,6 +353,7 @@ exports[`Home Page test render correctly when login 1`] = `
             <div>
               <div
                 class="ranking_item"
+                role="click"
               >
                 <div
                   class="name"
@@ -372,6 +382,7 @@ exports[`Home Page test render correctly when login 1`] = `
             <div>
               <div
                 class="ranking_item"
+                role="click"
               >
                 <div
                   class="name"
@@ -400,6 +411,7 @@ exports[`Home Page test render correctly when login 1`] = `
             <div>
               <div
                 class="ranking_item"
+                role="click"
               >
                 <div
                   class="name"
@@ -428,6 +440,7 @@ exports[`Home Page test render correctly when login 1`] = `
             <div>
               <div
                 class="ranking_item"
+                role="click"
               >
                 <div
                   class="name"
@@ -753,6 +766,7 @@ exports[`Home Page test render correctly when logout 1`] = `
           >
             <div
               class="left_arrow"
+              role="left"
             >
               <a
                 class="arrow_left"
@@ -761,6 +775,7 @@ exports[`Home Page test render correctly when logout 1`] = `
             </div>
             <div
               class="right_arrow"
+              role="right"
             >
               <a
                 class="arrow_right"
@@ -777,6 +792,7 @@ exports[`Home Page test render correctly when logout 1`] = `
             >
               <li
                 class="dotSelected"
+                role="dot"
               />
               <li
                 class="dotUnSelected"
@@ -811,6 +827,7 @@ exports[`Home Page test render correctly when logout 1`] = `
             <div>
               <div
                 class="ranking_item"
+                role="click"
               >
                 <div
                   class="name"
@@ -839,6 +856,7 @@ exports[`Home Page test render correctly when logout 1`] = `
             <div>
               <div
                 class="ranking_item"
+                role="click"
               >
                 <div
                   class="name"
@@ -867,6 +885,7 @@ exports[`Home Page test render correctly when logout 1`] = `
             <div>
               <div
                 class="ranking_item"
+                role="click"
               >
                 <div
                   class="name"
@@ -895,6 +914,7 @@ exports[`Home Page test render correctly when logout 1`] = `
             <div>
               <div
                 class="ranking_item"
+                role="click"
               >
                 <div
                   class="name"
@@ -923,6 +943,7 @@ exports[`Home Page test render correctly when logout 1`] = `
             <div>
               <div
                 class="ranking_item"
+                role="click"
               >
                 <div
                   class="name"
@@ -964,6 +985,7 @@ exports[`Home Page test render correctly when logout 1`] = `
             <div>
               <div
                 class="ranking_item"
+                role="click"
               >
                 <div
                   class="name"
@@ -992,6 +1014,7 @@ exports[`Home Page test render correctly when logout 1`] = `
             <div>
               <div
                 class="ranking_item"
+                role="click"
               >
                 <div
                   class="name"
@@ -1020,6 +1043,7 @@ exports[`Home Page test render correctly when logout 1`] = `
             <div>
               <div
                 class="ranking_item"
+                role="click"
               >
                 <div
                   class="name"
@@ -1048,6 +1072,7 @@ exports[`Home Page test render correctly when logout 1`] = `
             <div>
               <div
                 class="ranking_item"
+                role="click"
               >
                 <div
                   class="name"
@@ -1076,6 +1101,7 @@ exports[`Home Page test render correctly when logout 1`] = `
             <div>
               <div
                 class="ranking_item"
+                role="click"
               >
                 <div
                   class="name"

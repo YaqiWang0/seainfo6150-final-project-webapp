@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RankingItem test when the item is not clicked 1`] = `
+<div>
+  <div
+    class="ranking_item"
+    role="click"
+  >
+    <div
+      class="name"
+    >
+      <span
+        class="stock_name"
+      >
+        SLDB
+      </span>
+      <span
+        class="company_name"
+      >
+        Solid Biosciences Inc
+      </span>
+    </div>
+    <span
+      class="loser_price_text"
+    >
+      $5.7706
+    </span>
+  </div>
+</div>
+`;

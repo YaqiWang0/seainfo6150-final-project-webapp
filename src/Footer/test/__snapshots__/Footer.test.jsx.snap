@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer test render successfully 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div>
+      Author: Yaqi Wang
+    </div>
+    <div>
+      @All the images and content are downloaded or fetched from Internet.
+    </div>
+  </div>
+</div>
+`;

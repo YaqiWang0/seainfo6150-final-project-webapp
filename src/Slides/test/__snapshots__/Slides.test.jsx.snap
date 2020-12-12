@@ -1,0 +1,457 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsItem test render successfully 1`] = `
+<div>
+  <div
+    class="container"
+    style="background-image: url(https://cdn.snapi.dev/images/v1/h/h/bussines-services9.jpg);"
+  >
+    <div
+      class="cover"
+    >
+      <div
+        class="left_arrow"
+        role="left"
+      >
+        <a
+          class="arrow_left"
+          href="#"
+        />
+      </div>
+      <div
+        class="right_arrow"
+        role="right"
+      >
+        <a
+          class="arrow_right"
+          href="#"
+        />
+      </div>
+      <div
+        class="text"
+      >
+        5 Stocks Growing Earnings
+      </div>
+      <ul
+        class="dots"
+      >
+        <li
+          class="dotSelected"
+          role="dot"
+        />
+        <li
+          class="dotUnSelected"
+        />
+        <li
+          class="dotUnSelected"
+        />
+        <li
+          class="dotUnSelected"
+        />
+        <li
+          class="dotUnSelected"
+        />
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`NewsItem test render successfully when click dot 1`] = `
+<div>
+  <div
+    class="container"
+    style="background-image: url(https://cdn.snapi.dev/images/v1/s/o/so2kdddd.);"
+  >
+    <div
+      class="cover"
+    >
+      <div
+        class="left_arrow"
+        role="left"
+      >
+        <a
+          class="arrow_left"
+          href="#"
+        />
+      </div>
+      <div
+        class="right_arrow"
+        role="right"
+      >
+        <a
+          class="arrow_right"
+          href="#"
+        />
+      </div>
+      <div
+        class="text"
+      >
+        5 Stocks Growing Earnings
+      </div>
+      <ul
+        class="dots"
+      >
+        <li
+          class="dotSelected"
+          role="dot"
+        />
+        <li
+          class="dotUnSelected"
+        />
+        <li
+          class="dotUnSelected"
+        />
+        <li
+          class="dotUnSelected"
+        />
+        <li
+          class="dotUnSelected"
+        />
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`NewsItem test render successfully when click left arrow 1`] = `
+<div>
+  <div
+    class="container"
+    style="background-image: url(https://cdn.snapi.dev/images/v1/h/h/bussines-services9.jpg);"
+  >
+    <div
+      class="cover"
+    >
+      <div
+        class="left_arrow"
+        role="left"
+      >
+        <a
+          class="arrow_left"
+          href="#"
+        />
+      </div>
+      <div
+        class="right_arrow"
+        role="right"
+      >
+        <a
+          class="arrow_right"
+          href="#"
+        />
+      </div>
+      <div
+        class="text"
+      >
+        Becton, Dickinson & Co. Is a Highly Profitable, Recession-Proof Company
+      </div>
+      <ul
+        class="dots"
+      >
+        <li
+          class="dotUnSelected"
+          role="dot"
+        />
+        <li
+          class="dotUnSelected"
+        />
+        <li
+          class="dotUnSelected"
+        />
+        <li
+          class="dotUnSelected"
+        />
+        <li
+          class="dotSelected"
+        />
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`NewsItem test render successfully when click right arrow 1`] = `
+<div>
+  <div
+    class="container"
+    style="background-image: url(https://cdn.snapi.dev/images/v1/h/h/bussines-services9.jpg);"
+  >
+    <div
+      class="cover"
+    >
+      <div
+        class="left_arrow"
+        role="left"
+      >
+        <a
+          class="arrow_left"
+          href="#"
+        />
+      </div>
+      <div
+        class="right_arrow"
+        role="right"
+      >
+        <a
+          class="arrow_right"
+          href="#"
+        />
+      </div>
+      <div
+        class="text"
+      >
+        Pfizer Analyst Breaks Down The FDA Process For Coronavirus Vaccine Candidate
+      </div>
+      <ul
+        class="dots"
+      >
+        <li
+          class="dotUnSelected"
+          role="dot"
+        />
+        <li
+          class="dotSelected"
+        />
+        <li
+          class="dotUnSelected"
+        />
+        <li
+          class="dotUnSelected"
+        />
+        <li
+          class="dotUnSelected"
+        />
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Slides test render successfully 1`] = `
+<div>
+  <div
+    class="container"
+    style="background-image: url(https://cdn.snapi.dev/images/v1/h/h/bussines-services9.jpg);"
+  >
+    <div
+      class="cover"
+    >
+      <div
+        class="left_arrow"
+        role="left"
+      >
+        <a
+          class="arrow_left"
+          href="#"
+        />
+      </div>
+      <div
+        class="right_arrow"
+        role="right"
+      >
+        <a
+          class="arrow_right"
+          href="#"
+        />
+      </div>
+      <div
+        class="text"
+      >
+        5 Stocks Growing Earnings
+      </div>
+      <ul
+        class="dots"
+      >
+        <li
+          class="dotSelected"
+          role="dot"
+        />
+        <li
+          class="dotUnSelected"
+        />
+        <li
+          class="dotUnSelected"
+        />
+        <li
+          class="dotUnSelected"
+        />
+        <li
+          class="dotUnSelected"
+        />
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Slides test render successfully when click dot 1`] = `
+<div>
+  <div
+    class="container"
+    style="background-image: url(https://cdn.snapi.dev/images/v1/s/o/so2kdddd.);"
+  >
+    <div
+      class="cover"
+    >
+      <div
+        class="left_arrow"
+        role="left"
+      >
+        <a
+          class="arrow_left"
+          href="#"
+        />
+      </div>
+      <div
+        class="right_arrow"
+        role="right"
+      >
+        <a
+          class="arrow_right"
+          href="#"
+        />
+      </div>
+      <div
+        class="text"
+      >
+        5 Stocks Growing Earnings
+      </div>
+      <ul
+        class="dots"
+      >
+        <li
+          class="dotSelected"
+          role="dot"
+        />
+        <li
+          class="dotUnSelected"
+        />
+        <li
+          class="dotUnSelected"
+        />
+        <li
+          class="dotUnSelected"
+        />
+        <li
+          class="dotUnSelected"
+        />
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Slides test render successfully when click left arrow 1`] = `
+<div>
+  <div
+    class="container"
+    style="background-image: url(https://cdn.snapi.dev/images/v1/h/h/bussines-services9.jpg);"
+  >
+    <div
+      class="cover"
+    >
+      <div
+        class="left_arrow"
+        role="left"
+      >
+        <a
+          class="arrow_left"
+          href="#"
+        />
+      </div>
+      <div
+        class="right_arrow"
+        role="right"
+      >
+        <a
+          class="arrow_right"
+          href="#"
+        />
+      </div>
+      <div
+        class="text"
+      >
+        Becton, Dickinson & Co. Is a Highly Profitable, Recession-Proof Company
+      </div>
+      <ul
+        class="dots"
+      >
+        <li
+          class="dotUnSelected"
+          role="dot"
+        />
+        <li
+          class="dotUnSelected"
+        />
+        <li
+          class="dotUnSelected"
+        />
+        <li
+          class="dotUnSelected"
+        />
+        <li
+          class="dotSelected"
+        />
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Slides test render successfully when click right arrow 1`] = `
+<div>
+  <div
+    class="container"
+    style="background-image: url(https://cdn.snapi.dev/images/v1/h/h/bussines-services9.jpg);"
+  >
+    <div
+      class="cover"
+    >
+      <div
+        class="left_arrow"
+        role="left"
+      >
+        <a
+          class="arrow_left"
+          href="#"
+        />
+      </div>
+      <div
+        class="right_arrow"
+        role="right"
+      >
+        <a
+          class="arrow_right"
+          href="#"
+        />
+      </div>
+      <div
+        class="text"
+      >
+        Pfizer Analyst Breaks Down The FDA Process For Coronavirus Vaccine Candidate
+      </div>
+      <ul
+        class="dots"
+      >
+        <li
+          class="dotUnSelected"
+          role="dot"
+        />
+        <li
+          class="dotSelected"
+        />
+        <li
+          class="dotUnSelected"
+        />
+        <li
+          class="dotUnSelected"
+        />
+        <li
+          class="dotUnSelected"
+        />
+      </ul>
+    </div>
+  </div>
+</div>
+`;

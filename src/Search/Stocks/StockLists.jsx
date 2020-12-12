@@ -9,7 +9,7 @@ const StocksList = (props) => {
             {
                 props.stocks.map((item) =>(
                     <div>
-                        <StockItem login = {props.login} stock = {item} key = {item.ticker}/>
+                        <StockItem login = {props.login} stock = {item} key = {item.ticker} test = {props.test}/>
                     </div>
                 ))
             }

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserProfile test render successfully 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="picBack"
+    >
+      <div
+        class="pic"
+      />
+    </div>
+    <div
+      class="username"
+    />
+    <div
+      class="username"
+    >
+      123456@test.com
+    </div>
+    <div
+      class="userId"
+    >
+      eDTim61B16bVzVpItdODRzNGiEq1
+    </div>
+  </div>
+</div>
+`;

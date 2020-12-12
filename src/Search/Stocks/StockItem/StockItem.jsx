@@ -4,6 +4,8 @@ import { useHistory, useLocation } from "react-router-dom";
 
 const StockItem = (props) => {
     const randomClass = () => {
+        if(props.test === true)
+            return "container1"
         let name = "container"
         name = name + `${Math.floor((Math.random() * 6) + 1)}`;
         return name

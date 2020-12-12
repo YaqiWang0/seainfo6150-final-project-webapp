@@ -1,0 +1,76 @@
+{
+  "gainer": [
+    {
+      "ticker": "SNOA",
+      "changes": 4.55,
+      "price": "10.75",
+      "changesPercentage": "(+73.39%)",
+      "companyName": "Sonoma Pharmaceuticals Inc"
+    },
+    {
+      "ticker": "SLDB",
+      "changes": 2.0706,
+      "price": "5.7706",
+      "changesPercentage": "(+55.96%)",
+      "companyName": "Solid Biosciences Inc"
+    },
+    {
+      "ticker": "EQS",
+      "changes": 0.625,
+      "price": "1.755",
+      "changesPercentage": "(+55.31%)",
+      "companyName": "EQUUS Total Return Inc"
+    },
+    {
+      "ticker": "NH",
+      "changes": 1.37,
+      "price": "4.18",
+      "changesPercentage": "(+48.75%)",
+      "companyName": "NantHealth Inc"
+    },
+    {
+      "ticker": "VTVT",
+      "changes": 1.01,
+      "price": "3.2",
+      "changesPercentage": "(+46.12%)",
+      "companyName": "vTv Therapeutics Inc"
+    }
+  ],
+  "loser": [
+    {
+      "ticker": "GLSI",
+      "changes": -25.7,
+      "price": "46.52",
+      "changesPercentage": "(-35.59%)",
+      "companyName": "Greenwich LifeSciences, Inc."
+    },
+    {
+      "ticker": "SLS",
+      "changes": -5.96,
+      "price": "11.7",
+      "changesPercentage": "(-33.75%)",
+      "companyName": "Sellas Life Sciences Group Inc"
+    },
+    {
+      "ticker": "NBRV",
+      "changes": -0.945,
+      "price": "2.455",
+      "changesPercentage": "(-27.79%)",
+      "companyName": "Nabriva Therapeutics PLC"
+    },
+    {
+      "ticker": "KBLMU",
+      "changes": -3.18,
+      "price": "8.38",
+      "changesPercentage": "(-27.51%)",
+      "companyName": "KBL Merger Corp IV"
+    },
+    {
+      "ticker": "IPDN",
+      "changes": -0.525,
+      "price": "1.495",
+      "changesPercentage": "(-25.99%)",
+      "companyName": "Professional Diversity Network, Inc."
+    }
+  ]
+}

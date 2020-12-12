@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar test render successfully 1`] = `
+<div>
+  <div>
+    <form
+      action=""
+      class="searchBar"
+    >
+      <input
+        name="search"
+        pattern=".*\\\\S.*"
+        required=""
+        type="search"
+      />
+      <button
+        class="searchBtn"
+        type="submit"
+      >
+        <span>
+          Search
+        </span>
+      </button>
+    </form>
+  </div>
+</div>
+`;

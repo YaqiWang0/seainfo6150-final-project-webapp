@@ -43,15 +43,15 @@ const Slides = (props) => {
 return (
     <div className={style.container} style={backgroundImage} onClick={click}>
         <div className={style.cover}>
-            <div className={style.left_arrow} onClick = {(e) => clickButton(e, false)}>
+            <div role = {"left"} className={style.left_arrow} onClick = {(e) => clickButton(e, false)}>
                 <ArrowButton isRight = {false} />
             </div>
-            <div className={style.right_arrow} onClick = {(e) => clickButton(e, true)}>
+            <div role = {"right"} className={style.right_arrow} onClick = {(e) => clickButton(e, true)}>
                 <ArrowButton isRight = {true} />
             </div>
             <div className={style.text}>{props.news[select].title}</div>
             <ul className={style.dots}>
-                <li  className={select == 0 ? style.dotSelected : style.dotUnSelected} onClick={(e) => clickDot(e, 0)}/>
+                <li  role = {"dot"} className={select == 0 ? style.dotSelected : style.dotUnSelected} onClick={(e) => clickDot(e, 0)}/>
                 <li  className={select == 1 ? style.dotSelected : style.dotUnSelected} onClick={(e) => clickDot(e, 1)}/>
                 <li  className={select == 2 ? style.dotSelected : style.dotUnSelected} onClick={(e) => clickDot(e, 2)}/>
                 <li  className={select == 3 ? style.dotSelected : style.dotUnSelected} onClick={(e) => clickDot(e, 3)}/>

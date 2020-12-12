@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationBar test render successfully 1`] = `
+<div>
+  <nav>
+    <ul>
+      <li>
+        login
+        <span />
+        <span />
+        <span />
+        <span />
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`UserButton test render successfully 1`] = `
+<div>
+  <nav>
+    <ul>
+      <li>
+        login
+        <span />
+        <span />
+        <span />
+        <span />
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

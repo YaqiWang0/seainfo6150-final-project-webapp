@@ -1,0 +1,23 @@
+[
+  {
+    "symbol": "TSLA",
+    "name": "Tesla, Inc.",
+    "currency": "USD",
+    "stockExchange": "NasdaqGS",
+    "exchangeShortName": "NASDAQ"
+  },
+  {
+    "symbol": "MTSL",
+    "name": "Mer Telemanagement Solutions Ltd.",
+    "currency": "USD",
+    "stockExchange": "NasdaqCM",
+    "exchangeShortName": "NASDAQ"
+  },
+  {
+    "symbol": "FTSL",
+    "name": "First Trust Senior Loan Fund",
+    "currency": "USD",
+    "stockExchange": "NasdaqGM",
+    "exchangeShortName": "NASDAQ"
+  }
+]

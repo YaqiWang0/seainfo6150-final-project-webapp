@@ -1,0 +1,361 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer test render successfully when login false 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="pic"
+      />
+    </div>
+    <div
+      class="func"
+    >
+      <div>
+        <form
+          action=""
+          class="searchBar"
+        >
+          <input
+            name="search"
+            pattern=".*\\\\S.*"
+            required=""
+            type="search"
+          />
+          <button
+            class="searchBtn"
+            type="submit"
+          >
+            <span>
+              Search
+            </span>
+          </button>
+        </form>
+      </div>
+      <div
+        class="buttons"
+      >
+        <div
+          class="show"
+        >
+          <nav>
+            <ul>
+              <li>
+                LOGIN
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div
+          class="hide"
+        >
+          <nav>
+            <ul>
+              <li>
+                USER
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div
+          class="hide"
+        >
+          <nav>
+            <ul>
+              <li>
+                LOGOUT
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Footer test render successfully when login true 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="pic"
+      />
+    </div>
+    <div
+      class="func"
+    >
+      <div>
+        <form
+          action=""
+          class="searchBar"
+        >
+          <input
+            name="search"
+            pattern=".*\\\\S.*"
+            required=""
+            type="search"
+          />
+          <button
+            class="searchBtn"
+            type="submit"
+          >
+            <span>
+              Search
+            </span>
+          </button>
+        </form>
+      </div>
+      <div
+        class="buttons"
+      >
+        <div
+          class="hide"
+        >
+          <nav>
+            <ul>
+              <li>
+                LOGIN
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div
+          class="show"
+        >
+          <nav>
+            <ul>
+              <li>
+                USER
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div
+          class="show"
+        >
+          <nav>
+            <ul>
+              <li>
+                LOGOUT
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`NavigationBar test render successfully when login false 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="pic"
+      />
+    </div>
+    <div
+      class="func"
+    >
+      <div>
+        <form
+          action=""
+          class="searchBar"
+        >
+          <input
+            name="search"
+            pattern=".*\\\\S.*"
+            required=""
+            type="search"
+          />
+          <button
+            class="searchBtn"
+            type="submit"
+          >
+            <span>
+              Search
+            </span>
+          </button>
+        </form>
+      </div>
+      <div
+        class="buttons"
+      >
+        <div
+          class="show"
+        >
+          <nav>
+            <ul>
+              <li>
+                LOGIN
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div
+          class="hide"
+        >
+          <nav>
+            <ul>
+              <li>
+                USER
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div
+          class="hide"
+        >
+          <nav>
+            <ul>
+              <li>
+                LOGOUT
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`NavigationBar test render successfully when login true 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="pic"
+      />
+    </div>
+    <div
+      class="func"
+    >
+      <div>
+        <form
+          action=""
+          class="searchBar"
+        >
+          <input
+            name="search"
+            pattern=".*\\\\S.*"
+            required=""
+            type="search"
+          />
+          <button
+            class="searchBtn"
+            type="submit"
+          >
+            <span>
+              Search
+            </span>
+          </button>
+        </form>
+      </div>
+      <div
+        class="buttons"
+      >
+        <div
+          class="hide"
+        >
+          <nav>
+            <ul>
+              <li>
+                LOGIN
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div
+          class="show"
+        >
+          <nav>
+            <ul>
+              <li>
+                USER
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div
+          class="show"
+        >
+          <nav>
+            <ul>
+              <li>
+                LOGOUT
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
